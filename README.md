@@ -7,16 +7,13 @@ Base code taken from https://github.com/ccelio/riscv-hpmcounters
 HOW TO USE
 
 MAKE statistics binary
-$ make
-to make the hpm_counters binary (the docker image should have riscv64-unknown-linux-gnu-g++ installed)
+type 'make' to make the hpm_counters binary (the docker image should have riscv64-unknown-linux-gnu-g++ installed)
 
 CONFIGURE benchmark script
 Edit the runstats.sh, replacing ./mybenchmark with the instruction required to run your benchmark
 If you to collect statistcs once, instead of continuously, replace "./hpm_counters &" with "./hpm_counters single &"
 
 MOVE the necessary files onto your mounted directory
-$ mv hpm_counters mountedDirectory/
-$ mv runstats.sh mountedDirectory/
 
 LAUNCH your processor
 
