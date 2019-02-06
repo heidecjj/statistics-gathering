@@ -1,0 +1,32 @@
+0
+1
+2
+3   Exception taken
+4   Integer load instruction retired
+5   Integer Store instruction retired
+6   Atomic memory operation retired
+7   System instruction retired
+8   Integer arithmetic instruction retired
+9   Conditional branch retired
+10  JAL instruction retired
+11  JALR instruction retired
+12  Integer multiplication instruction retired
+13  Integer division instruction retired
+14  Floating-point load & store instructions retired
+15  Floating-point addition, multiplication, fused multiply-add, division, square-root, or other floating point instructions retired
+16  Load-use interlock
+17  Long-latency interlock
+18  CSR read interlock
+19  Instruction cache/ITIM busy
+20  Data cache/DTIM busy
+21  Branch direction misprediction
+22  Branch/jump target misprediction
+23  Pipeline flush from CSR write
+24  Pipeline flush from other event
+25  Integer multiplication interlock
+26  Floating-point interlock
+27  Instruction cache miss
+28  Data cache miss or memory-mapped I/O access
+29  Data cache writeback
+30  Instruction TLB miss
+31  Data TLB miss
