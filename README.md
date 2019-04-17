@@ -6,6 +6,8 @@ Base code taken from https://github.com/ccelio/riscv-hpmcounters
 
 HOW TO USE
 
+To get this working, you first need to modify the linux boot loader. See https://ada.csse.rose-hulman.edu/neuroprocessor-group/deca/wikis/statistics for instructions on how to do this.
+
 MAKE the binary - 
 type 'make' to make the hpm_counters binary (the docker image should have riscv64-unknown-linux-gnu-g++ installed)
 
