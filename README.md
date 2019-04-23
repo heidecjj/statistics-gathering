@@ -6,13 +6,13 @@ Base code taken from https://github.com/ccelio/riscv-hpmcounters
 
 HOW TO USE
 
-To get this working, you first need to modify the linux boot loader. See https://ada.csse.rose-hulman.edu/neuroprocessor-group/deca/wikis/tutorials/statistics for instructions on how to do this.
+To get this working, you first need to modify the linux boot loader. See https://github.com/rhit-neuro/deca/wikis/tutorials/statistics for instructions on how to do this.
 
-MAKE the binary - 
+MAKE the binary -
 type 'make' to make the hpm_counters binary (the docker image should have riscv64-unknown-linux-gnu-g++ installed)
 
 
-CONFIGURE benchmark script - 
+CONFIGURE benchmark script -
 Edit the runstats.sh, replacing ./mybenchmark with the instruction required to run your benchmark.
 If you want to collect statistcs once, instead of continuously, replace "./hpm_counters &" with "./hpm_counters single &"
 
@@ -26,7 +26,7 @@ LAUNCH your processor
 ENSURE your benchmark is in the same directory as hpm_counters and runstats.sh (you may have to chmod +x runstats.sh)
 
 
-RUN the benchmark 
+RUN the benchmark
 > ./runstats.sh
 
 
